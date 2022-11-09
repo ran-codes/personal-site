@@ -1,0 +1,190 @@
+---
+title: "Mock Paper"
+subtitle: "A reproducible manuscript written in Quarto."
+description: "A reproducible manuscript written in Quarto."
+date: "2022-10-25"
+image: "quarto.png"
+format: 
+  html:
+    toc: true
+    code-tools: true
+    code-fold: true
+execute:
+  warning: false
+  error: false
+bibliography: references.bib
+author:
+  - name: Rhaenyra Targaryen
+    affiliations:
+      - University of Dragonstone
+      - First of her name
+    orcid: 0000-0003-0918-3766
+  - name: Alicent Hightower
+    affiliations:
+      - College of Kings Landing
+    orcid: 0000-0003-0918-3766
+abstract: |
+ What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.  snippets are employed that have been inspired by @Biswas2022, What did the fox say. What did the fox say. 
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Introduction
+
+What did the fox say. What did the fox say. What did the fox say. What
+did the fox say. What did the fox say. What did the fox say. What did
+the fox say. What did the fox say. What did the fox say @Fox2020.
+
+## Data
+
+```{r}
+
+## Dependencies
+library(tidyverse)
+library(reactable) ## Interactive tables
+library(highcharter) ## Interactive viz
+library(sjPlot) ## Model sumamry
+library(lme4) ## Mixed models
+
+## Figure 1 Data
+data_fig1 =  data.frame(
+    stringsAsFactors = FALSE,
+    name = c(
+      "The Left",
+      "Social Democratic Party",
+      "Alliance 90/The Greens",
+      "Free Democratic Party",
+      "Christian Democratic Union",
+      "Christian Social Union in Bavaria",
+      "Alternative for Germany"
+    ),
+    count = c(69, 153, 67, 80, 200, 46, 94),
+    col = c("#BE3075", "#EB001F", "#64A12D", "#FFED00",
+            "#000000", "#008AC5", "#009EE0"
+    ),
+    abbrv = c("DIE LINKE", "SPD", "GR???NE", "FDP", "CDU", "CSU", "AfD")
+  )
+
+## Figure 2 Data
+data(GNI2014, package = "treemap")
+data_fig2 = GNI2014  
+
+
+## Figure 3 Data
+data("sleepstudy")
+data("efc")
+efc$cluster <- as.factor(efc$e15relat)
+```
+
+For this paper we will be using some dummy data. The libraries and data
+simulation or imports are shown above.
+
+## Methods
+
+```{r}
+m1 <- lmer(neg_c_7 ~ c160age + c161sex + e42dep + (1 | cluster), data = efc)
+m2 <- lmer(Reaction ~ Days + (1 + Days | Subject), data = sleepstudy)
+```
+
+We fit the following model. We specificied age as What did the fox say.
+
+$$
+y = x_1\beta_1 + x_2\beta_2 + x_2^2\beta_3 + \varepsilon
+$$ {#eq-model}
+
+::: column-margin
+We know from *the first fundamental theorem of calculus* that for $x$ in
+$[a, b]$:
+
+$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
+:::
+
+## Foxes are not green
+
+What did the fox say. What did the fox say. What did the fox say. What
+did the fox say. What did the fox say. What did the fox say. What did
+the fox say. What did the fox say. What did the fox say.
+
+```{r}
+#| label: fig-plot
+#| fig-cap: "The distribution of something for something."
+#| column: screen-inset-shaded
+hchart(
+  data_fig1,
+  "item",
+  hcaes(
+    name = name,
+    y = count,
+    label = abbrv,
+    color = col
+  ),
+  name = "Representatives",
+  showInLegend = TRUE,
+  size = "100%",
+  center = list("50%", "75%"),
+  startAngle = -100,
+  endAngle  = 100
+)  
+```
+
+## Foxes like maps
+
+What did the fox say. What did the fox say. What did the fox say. What
+did the fox say. What did the fox say. What did the fox say. What did
+the fox say. What did the fox say. What did the fox say.
+
+```{r}
+#| label: fig-map
+#| fig-cap: "Foxes realy like maps but are hard to find."
+
+
+hcmap(
+    "custom/world-robinson-lowres",
+    data = GNI2014,
+    name = "Gross national income per capita",
+    value = "GNI",
+    borderWidth = 0,
+    nullColor = "#d3d3d3",
+    joinBy = c("iso-a3", "iso3")
+  ) |>
+    hc_colorAxis(
+      stops = color_stops(colors = viridisLite::inferno(10, begin = 0.1)),
+      type = "logarithmic"
+    )
+```
+
+## Model
+
+```{r}
+#| label: fig-mtcars
+#| fig-cap: "MPG vs horsepower, colored by transmission."
+#| column: margin
+#| echo: false
+
+library(ggplot2)
+mtcars2 <- mtcars
+mtcars2$am <- factor(
+  mtcars$am, labels = c('automatic', 'manual')
+)
+ggplot(mtcars2, aes(hp, mpg, color = am)) +
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "loess") +
+  theme(legend.position = 'bottom')
+```
+
+What did the fox say. What did the fox say. What did the fox say. What
+did the fox say. What did the fox say. What did the fox say. What did
+the fox say. What did the fox say. What did the fox say.
+
+```{r}
+tab_model(m1, m2)
+```
+
+## Discussion
+
+Foxes are cute @Sparkes2022 We also show this in @fig-plot. However our
+modeling reports that tail length significantly affects cuteness. What
+did the fox say. What did the fox say. What did the fox say. What did
+the fox say. What did the fox say. What did the fox say. What did the
+fox say. What did the fox say. What did the fox say.

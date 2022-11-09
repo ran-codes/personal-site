@@ -1,0 +1,74 @@
+---
+title: "Hello Quarto"
+subtitle: "A document to demo Quarto features"
+author: "Thomas Bayes"
+date: "2022-10-24"
+format: html
+bibliography: references.bib
+---
+
+# Introduction
+
+**Quarto** allows us to *weave computation* and prose into publication and web ready outputs. Visit the [Quarto website to get started.](https://quarto.org/)
+
+![Quarto schematic](quarto.png){#ref fig-alt="Quarto schematic"}
+
+# Batteries included
+
+Quarto comes with very useful technical + publication features!
+
+## Table of Contents
+
+In the YAML we can specify `toc: true`
+
+## Latex
+
+$$
+e=mc^2
+$$ {#eq-energy}
+
+$$
+x^n+y^n=z^n
+$$ {#eq-lorenz}
+
+Inline latex $x^n+y^n=z^n$ can also be written
+
+## Citations
+
+-   DOI: [@quistberg2018]
+-   PubMed: [@Packer2021]
+-   inline citation: according to @Sparkes2022 cats are awesome!
+
+## Cross references
+
+We can reference @eq-lorenz.
+
+## Callouts
+
+::: callout-note
+This is a Note callout.
+:::
+
+::: {.callout-caution collapse="true"}
+## Click here for a warning!
+
+DANGER WILL ROBINSON!
+:::
+
+## Tabsets
+
+::: panel-tabset
+## Data
+
+data table
+
+## Visualization
+
+plot
+
+## Model Results
+
+model summary
+:::
+
+# Reference

@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Mock Paper\n\n\nA reproducible manuscript written in Quarto.\n\n\nA reproducible manuscript written in Quarto.\n\n\n\n\n\n\nOct 25, 2022\n\n\nRhaenyra Targaryen, Alicent Hightower\n\n\n\n\n\n\n  \n\n\n\n\nHello Quarto\n\n\nA document to demo Quarto features\n\n\n\n\n\n\n\n\n\nOct 24, 2022\n\n\nThomas Bayes\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nOct 24, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nOct 21, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Thomas Bayes",
+    "section": "",
+    "text": "Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.\n\n\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011\n\n\n\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Sept 2012 - April 2018"
+  },
+  {
+    "objectID": "posts/demo-1a-single-doc-prose/index.html",
+    "href": "posts/demo-1a-single-doc-prose/index.html",
+    "title": "Hello Quarto",
+    "section": "",
+    "text": "Quarto allows us to weave computation and prose into publication and web ready outputs. Visit the Quarto website to get started.\n\n\n\nQuarto schematic"
+  },
+  {
+    "objectID": "posts/demo-1a-single-doc-prose/index.html#table-of-contents",
+    "href": "posts/demo-1a-single-doc-prose/index.html#table-of-contents",
+    "title": "Hello Quarto",
+    "section": "Table of Contents",
+    "text": "Table of Contents\nIn the YAML we can specify toc: true"
+  },
+  {
+    "objectID": "posts/demo-1a-single-doc-prose/index.html#latex",
+    "href": "posts/demo-1a-single-doc-prose/index.html#latex",
+    "title": "Hello Quarto",
+    "section": "Latex",
+    "text": "Latex\n\\[\ne=mc^2\n\\tag{1}\\]\n\\[\nx^n+y^n=z^n\n\\tag{2}\\]\nInline latex \\(x^n+y^n=z^n\\) can also be written"
+  },
+  {
+    "objectID": "posts/demo-1a-single-doc-prose/index.html#citations",
+    "href": "posts/demo-1a-single-doc-prose/index.html#citations",
+    "title": "Hello Quarto",
+    "section": "Citations",
+    "text": "Citations\n\nDOI: (Quistberg et al. 2018)\nPubMed: (Packer et al. 2021)\ninline citation: according to Sparkes (2021) cats are awesome!"
+  },
+  {
+    "objectID": "posts/demo-1a-single-doc-prose/index.html#cross-references",
+    "href": "posts/demo-1a-single-doc-prose/index.html#cross-references",
+    "title": "Hello Quarto",
+    "section": "Cross references",
+    "text": "Cross references\nWe can reference Equation 2."
+  },
+  {
+    "objectID": "posts/demo-1a-single-doc-prose/index.html#callouts",
+    "href": "posts/demo-1a-single-doc-prose/index.html#callouts",
+    "title": "Hello Quarto",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nNote\n\n\n\nThis is a Note callout.\n\n\n\n\n\n\n\n\nClick here for a warning!\n\n\n\n\n\nDANGER WILL ROBINSON!"
+  },
+  {
+    "objectID": "posts/demo-1a-single-doc-prose/index.html#tabsets",
+    "href": "posts/demo-1a-single-doc-prose/index.html#tabsets",
+    "title": "Hello Quarto",
+    "section": "Tabsets",
+    "text": "Tabsets\n\nDataVisualizationModel Results\n\n\ndata table\n\n\nplot\n\n\nmodel summary"
+  },
+  {
+    "objectID": "posts/demo-1c-single-doc-code/index.html",
+    "href": "posts/demo-1c-single-doc-code/index.html",
+    "title": "Mock Paper",
+    "section": "",
+    "text": "What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say (Fox2020?)."
+  },
+  {
+    "objectID": "posts/demo-1c-single-doc-code/index.html#data",
+    "href": "posts/demo-1c-single-doc-code/index.html#data",
+    "title": "Mock Paper",
+    "section": "Data",
+    "text": "Data\n\n\nCode\n## Dependencies\nlibrary(tidyverse)\nlibrary(reactable) ## Interactive tables\nlibrary(highcharter) ## Interactive viz\nlibrary(sjPlot) ## Model sumamry\nlibrary(lme4) ## Mixed models\n\n## Figure 1 Data\ndata_fig1 =  data.frame(\n    stringsAsFactors = FALSE,\n    name = c(\n      \"The Left\",\n      \"Social Democratic Party\",\n      \"Alliance 90/The Greens\",\n      \"Free Democratic Party\",\n      \"Christian Democratic Union\",\n      \"Christian Social Union in Bavaria\",\n      \"Alternative for Germany\"\n    ),\n    count = c(69, 153, 67, 80, 200, 46, 94),\n    col = c(\"#BE3075\", \"#EB001F\", \"#64A12D\", \"#FFED00\",\n            \"#000000\", \"#008AC5\", \"#009EE0\"\n    ),\n    abbrv = c(\"DIE LINKE\", \"SPD\", \"GR???NE\", \"FDP\", \"CDU\", \"CSU\", \"AfD\")\n  )\n\n## Figure 2 Data\ndata(GNI2014, package = \"treemap\")\ndata_fig2 = GNI2014  \n\n\n## Figure 3 Data\ndata(\"sleepstudy\")\ndata(\"efc\")\nefc$cluster <- as.factor(efc$e15relat)\n\n\nFor this paper we will be using some dummy data. The libraries and data simulation or imports are shown above."
+  },
+  {
+    "objectID": "posts/demo-1c-single-doc-code/index.html#methods",
+    "href": "posts/demo-1c-single-doc-code/index.html#methods",
+    "title": "Mock Paper",
+    "section": "Methods",
+    "text": "Methods\n\n\nCode\nm1 <- lmer(neg_c_7 ~ c160age + c161sex + e42dep + (1 | cluster), data = efc)\nm2 <- lmer(Reaction ~ Days + (1 + Days | Subject), data = sleepstudy)\n\n\nWe fit the following model. We specificied age as What did the fox say.\n\\[\ny = x_1\\beta_1 + x_2\\beta_2 + x_2^2\\beta_3 + \\varepsilon\n\\tag{1}\\]\n\n\nWe know from the first fundamental theorem of calculus that for \\(x\\) in \\([a, b]\\):\n\\[\\frac{d}{dx}\\left( \\int_{a}^{x} f(u)\\,du\\right)=f(x).\\]"
+  },
+  {
+    "objectID": "posts/demo-1c-single-doc-code/index.html#foxes-are-not-green",
+    "href": "posts/demo-1c-single-doc-code/index.html#foxes-are-not-green",
+    "title": "Mock Paper",
+    "section": "Foxes are not green",
+    "text": "Foxes are not green\nWhat did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.\n\n\nCode\nhchart(\n  data_fig1,\n  \"item\",\n  hcaes(\n    name = name,\n    y = count,\n    label = abbrv,\n    color = col\n  ),\n  name = \"Representatives\",\n  showInLegend = TRUE,\n  size = \"100%\",\n  center = list(\"50%\", \"75%\"),\n  startAngle = -100,\n  endAngle  = 100\n)  \n\n\n\n\n\n\nFigure 1: The distribution of something for something."
+  },
+  {
+    "objectID": "posts/demo-1c-single-doc-code/index.html#foxes-like-maps",
+    "href": "posts/demo-1c-single-doc-code/index.html#foxes-like-maps",
+    "title": "Mock Paper",
+    "section": "Foxes like maps",
+    "text": "Foxes like maps\nWhat did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.\n\n\nCode\nhcmap(\n    \"custom/world-robinson-lowres\",\n    data = GNI2014,\n    name = \"Gross national income per capita\",\n    value = \"GNI\",\n    borderWidth = 0,\n    nullColor = \"#d3d3d3\",\n    joinBy = c(\"iso-a3\", \"iso3\")\n  ) |>\n    hc_colorAxis(\n      stops = color_stops(colors = viridisLite::inferno(10, begin = 0.1)),\n      type = \"logarithmic\"\n    )\n\n\n\n\n\n\nFigure 2: Foxes realy like maps but are hard to find."
+  },
+  {
+    "objectID": "posts/demo-1c-single-doc-code/index.html#model",
+    "href": "posts/demo-1c-single-doc-code/index.html#model",
+    "title": "Mock Paper",
+    "section": "Model",
+    "text": "Model\n\n\n\n\n\n\nFigure 3: MPG vs horsepower, colored by transmission.\n\n\n\nWhat did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say.\n\n\nCode\ntab_model(m1, m2)\n\n\n\n\n\n \nNegative impact with 7items\nReaction\n\n\nPredictors\nEstimates\nCI\np\nEstimates\nCI\np\n\n\n(Intercept)\n6.55\n4.86 – 8.23\n<0.001\n251.41\n237.94 – 264.87\n<0.001\n\n\ncarer'age\n-0.00\n-0.03 – 0.02\n0.802\n\n\n\n\n\ncarer's gender\n0.47\n-0.08 – 1.02\n0.094\n\n\n\n\n\nelder's dependency\n1.45\n1.19 – 1.71\n<0.001\n\n\n\n\n\nDays\n\n\n\n10.47\n7.42 – 13.52\n<0.001\n\n\nRandom Effects\n\n\n\nσ2\n12.61\n654.94\n\n\n\nτ00\n0.50 cluster\n612.10 Subject\n\n\nτ11\n \n35.07 Subject.Days\n\n\nρ01\n \n0.07 Subject\n\n\nICC\n0.04\n0.72\n\n\nN\n8 cluster\n18 Subject\n\nObservations\n888\n180\n\n\nMarginal R2 / Conditional R2\n0.127 / 0.160\n0.279 / 0.799"
+  },
+  {
+    "objectID": "posts/demo-1c-single-doc-code/index.html#discussion",
+    "href": "posts/demo-1c-single-doc-code/index.html#discussion",
+    "title": "Mock Paper",
+    "section": "Discussion",
+    "text": "Discussion\nFoxes are cute Sparkes (2021) We also show this in Figure 1. However our modeling reports that tail length significantly affects cuteness. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say. What did the fox say."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  }
+]
